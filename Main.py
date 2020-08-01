@@ -43,6 +43,81 @@ def userText(message):
         markup.add(item1,item2,item3,item4,item5,item6)
         bot.send_message(message.chat.id, "Выберете категорию", reply_markup=markup)
 
+    if message.text == "Общие положения Гражданского кодекса":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Основные положения")
+        item2 = types.KeyboardButton("Лица")
+        item3 = types.KeyboardButton("Объекты гражданских прав")
+        item4 = types.KeyboardButton("Сделки. Представительство")
+        item5 = types.KeyboardButton("Сроки. Исковая давность")
+        markup.add(item1,item2,item3,item4,item5)
+        bot.send_message(message.chat.id, "Какой раздел интересен?", reply_markup=markup)
+
+    if message.text == "Основные положения":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Гражданское законодательство Украины")
+        item2 = types.KeyboardButton("Основания возникновения гражданских прав и обязанностей. Осуществление гражданских прав и выполнение обязанностей")
+        item3 = types.KeyboardButton("Защита гражданских прав и интересов")
+        markup.add(item1,item2,item3)
+        bot.send_message(message.chat.id, "Раздел 1 - Основные положения. Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Лица":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Физическое лицо")
+        item2 = types.KeyboardButton("Юридическое лицо")
+        item3 = types.KeyboardButton("Участие государства, АР Крым, территориальных общин в гражданских отношениях")
+        markup.add(item1,item2,item3)
+        bot.send_message(message.chat.id, "Раздел 2 - Лица. Какой Подраздел интересен?", reply_markup=markup)
+
+    if message.text == "Физическое лицо":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Общие положения о физическом лице")
+        item2 = types.KeyboardButton("Физическое лицо - предприниматель")
+        item3 = types.KeyboardButton("Опека и попечительство")
+        markup.add(item1,item2,item3)
+        bot.send_message(message.chat.id, "Подраздел 1 - Физическое лицо. Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Юридическое лицо":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Общие положения о юридическом лице")
+        item2 = types.KeyboardButton("Предпринимательские общества")
+        markup.add(item1,item2)
+        bot.send_message(message.chat.id, "Подраздел 2 - Юридическое лицо. Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Участие государства, АР Крым, территориальных общин в гражданских отношениях":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Правовые формы Участия государства, АР Крым, территориальных общин в гражданских отношениях")
+        item2 = types.KeyboardButton("Органы и представители, через которые действуют государство, АР Крым, территориальные общины в гражданских отношениях")
+        item3 = types.KeyboardButton("Ответственность по обязательствам государства, АР Крым, территориальных общин")
+        markup.add(item1,item2,item3)
+        bot.send_message(message.chat.id, "Подраздел 3 - Участие государства, АР Крым, территориальных общин в гражданских отношениях. Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Объекты гражданских прав":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Общие положения об объектах гражданских прав")
+        item2 = types.KeyboardButton("Вещи. Имущество")
+        item3 = types.KeyboardButton("Ценные бумаги")
+        item4 = types.KeyboardButton("Нематериальные блага")
+        markup.add(item1,item2,item3,item4)
+        bot.send_message(message.chat.id, "Раздел 3 - Объекты гражданских прав. Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Сделки. Представительство":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Сделки")
+        item2 = types.KeyboardButton("Представительство")
+        markup.add(item1,item2)
+        bot.send_message(message.chat.id, "Раздел 4 - Сделки. Представительство. Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Сроки. Исковая давность":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Определение и вычисление сроков")
+        item2 = types.KeyboardButton("Исковая давность")
+        markup.add(item1,item2)
+        bot.send_message(message.chat.id, "Раздел 5 - Сроки. Исковая давность. Какая глава интересна?", reply_markup=markup)
+
+
+        
+
     elif message.text == "Гражданский процессуальный кодекс":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
         item1 = types.KeyboardButton("Общие положения")
