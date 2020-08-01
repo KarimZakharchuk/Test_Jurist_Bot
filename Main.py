@@ -120,14 +120,11 @@ def userText(message):
 
     elif message.text == "Уголовный кодекс Украины":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-        item1 = types.KeyboardButton("")
-        item2 = types.KeyboardButton("")
-        item3 = types.KeyboardButton("")
-        item4 = types.KeyboardButton("")
-        item5 = types.KeyboardButton("")
-        item6 = types.KeyboardButton("")
+        item1 = types.KeyboardButton("Общая часть")
+        item2 = types.KeyboardButton("Особенная часть")
+        item3 = types.KeyboardButton("Заключительные и переходные положения")
 
-        markup.add(item1,item2,item3,item4,item5,item6)
+        markup.add(item1,item2,item3)
         bot.send_message(message.chat.id, "Выберете категорию", reply_markup=markup)
 
     elif message.text == "КЗоТ - Кодекс законов о труде":
