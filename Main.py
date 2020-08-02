@@ -31,6 +31,7 @@ def userHelp(message):
 
 @bot.message_handler(content_types=["text"])
 def userText(message):
+    #ГКУ(Гражданский кодекс Украины)
     if message.text == "Гражданский кодекс Украины":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
         item1 = types.KeyboardButton("Общие положения Гражданского кодекса")
@@ -111,13 +112,161 @@ def userText(message):
     if message.text == "Сроки. Исковая давность":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
         item1 = types.KeyboardButton("Определение и вычисление сроков")
-        item2 = types.KeyboardButton("Исковая давность")
+        item2 = types.KeyboardButton("Исковая давность") 
         markup.add(item1,item2)
         bot.send_message(message.chat.id, "Раздел 5 - Сроки. Исковая давность. Какая глава интересна?", reply_markup=markup)
 
-
+    if message.text == "Личные неимущественные права физического лица":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Общие положения про личные неимущественные права физического лица")
+        item2 = types.KeyboardButton("Личные неимущественные права, которые обеспечивают естественное существование физического лица")
+        item3 = types.KeyboardButton("Личные неимущественные права, которые обеспечивают социальное бытие физического лица")
         
+        markup.add(item1,item2,item3)
+        bot.send_message(message.chat.id, "Какая глава интересна?", reply_markup=markup)
 
+    if message.text == "Право собственности и прочие вещные права":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Право собственности")
+        item2 = types.KeyboardButton("Вещное право на чужое имущество")
+        
+        markup.add(item1,item2)
+        bot.send_message(message.chat.id, "Какой раздел интересен?", reply_markup=markup)
+
+    if message.text == "Право собственности":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Общие положения о праве собственности")
+        item2 = types.KeyboardButton("Возникновение права собственности")
+        item3 = types.KeyboardButton("Прекращение права собственности")
+        item4 = types.KeyboardButton("Право общей собственности")
+        item5 = types.KeyboardButton("Право собственности на землю (земельный участок)")
+        item6 = types.KeyboardButton("Право собственности на жилье")
+        item7 = types.KeyboardButton("Защита права собственности")
+        
+        markup.add(item1,item2,item3,item4,item5,item6,item7)
+        bot.send_message(message.chat.id, "Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Вещное право на чужое имущество":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Общие положения о вещевых права на чужое имущество")
+        item2 = types.KeyboardButton("Право владения чужим имуществом")
+        item3 = types.KeyboardButton("Право пользования чужим имуществом")
+        item4 = types.KeyboardButton("Право пользования чужим земельным участком для с/х потребностей")
+        item5 = types.KeyboardButton("Право пользования чужим земельным участком для застройки")
+        
+        markup.add(item1,item2,item3,item4,item5)
+        bot.send_message(message.chat.id, "Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Право интеллектуальной собственности":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Общие положения о праве интеллектуальной собственности")
+        item2 = types.KeyboardButton("Право интеллектуальной собственности на литературное, художественное и другое произведение (авторское право)")
+        item3 = types.KeyboardButton("Право интеллектуальной собственности на выполнение, фонограмму, видеограмму и программу (передач), организации речи (сопредельные права)")
+        item4 = types.KeyboardButton("Право интеллектуальной собственности на научное открытие")
+        item5 = types.KeyboardButton("Право интеллектуальной собственности на изобретение, полезную модель, промышленный образец")
+        item6 = types.KeyboardButton("Право интеллектуальной собственности на компоновку полупроводниковых изделий")
+        item7 = types.KeyboardButton("Право интеллектуальной собственности на рационализаторское предложение")
+        item8 = types.KeyboardButton("Право интеллектуальной собственности на сорт растений, породу животных")
+        item9 = types.KeyboardButton("Право интеллектуальной собственности на коммерческое наименование")
+        item10 = types.KeyboardButton("Право интеллектуальной собственности на торговую марку")
+        item11 = types.KeyboardButton("Право интеллектуальной собственности на географическое указание")
+        item12 = types.KeyboardButton("Право интеллектуальной собственности на коммерческую тайну")
+        
+        markup.add(item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12)
+        bot.send_message(message.chat.id, "Какая глава интересна?", reply_markup=markup)
+        
+    if message.text == "Обязательственное право":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Общие положения об обязательстве")
+        item2 = types.KeyboardButton("Общие положения о договоре")
+        item3 = types.KeyboardButton("Отдельные виды обязательств")
+        
+        markup.add(item1,item2,item3)
+        bot.send_message(message.chat.id, "Какой раздел интересен?", reply_markup=markup)
+
+    if message.text == "Общие положения об обязательстве":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Понятие обязательства. Стороны в обязательстве")
+        item2 = types.KeyboardButton("Выполнение обязательства")
+        item3 = types.KeyboardButton("Обеспечение выполнения обязательств")
+        item4 = types.KeyboardButton("Прекращение обязательства")
+        item5 = types.KeyboardButton("Правовые последствия нарушения обязательства. Ответственность за нарушение обязательства")
+        
+        markup.add(item1,item2,item3,item4,item5)
+        bot.send_message(message.chat.id, "Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Общие положения об обязательстве":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Понятие и условия договора")
+        item2 = types.KeyboardButton("Заключение, изменение и разрыв договора")
+        
+        markup.add(item1,item2)
+        bot.send_message(message.chat.id, "Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Отдельные виды обязательств":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Договорные обязательства")
+        item2 = types.KeyboardButton("Недоговорные обязательства")
+        
+        markup.add(item1,item2)
+        bot.send_message(message.chat.id, "Какой Подраздел интересен?", reply_markup=markup)
+
+    if message.text == "Договорные обязательства":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Купля - продажа")
+        item2 = types.KeyboardButton("Дарение")
+        item3 = types.KeyboardButton("Рента")
+        item4 = types.KeyboardButton("Пожизненное содержание (уход)")
+        item5 = types.KeyboardButton("Найм (аренда)")
+        item6 = types.KeyboardButton("Найм (аренда) жилья")
+        item7 = types.KeyboardButton("Ссуда")
+        item8 = types.KeyboardButton("Подряд")
+        item9 = types.KeyboardButton("Выполнение научно- исследовательских или опытно-конструкторских и технологических работ")
+        item10 = types.KeyboardButton("Услуги. Общие положения")
+        item11 = types.KeyboardButton("Перевозка")
+        item12 = types.KeyboardButton("Транспортное экспедирование")
+        item13 = types.KeyboardButton("Хранение")
+        item14 = types.KeyboardButton("Страхование")
+        item15 = types.KeyboardButton("Поручение")
+        item16 = types.KeyboardButton("Комиссия")
+        item17 = types.KeyboardButton("Управление имуществом")
+        item18 = types.KeyboardButton("Займ. Кредит. Банковский вклад")
+        item19 = types.KeyboardButton("Банковский счет")
+        item20 = types.KeyboardButton("Факторинг")
+        item21 = types.KeyboardButton("Расчеты")
+        item22 = types.KeyboardButton("Распоряжение имущественными правами интеллектуальной собственности")
+        item23 = types.KeyboardButton("Коммерческая концессия")
+        item24 = types.KeyboardButton("Совместная деятельность")
+
+        markup.add(item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12,item13,item14,item15,item16,item17,item18,item19,item20,item21,item22,item23,item24)
+        bot.send_message(message.chat.id, "Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Недоговорные обязательства":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Публичное обещание вознаграждения")
+        item2 = types.KeyboardButton("Совершение действий в имущественных интересах другого лица без его поручения")
+        item3 = types.KeyboardButton("Спасение здоровья и жизни физического лица, имущества физического или юридического лица")
+        item4 = types.KeyboardButton("Создание угрозы жизни, здоровью, имуществу физического лица или имуществу юридического лица")
+        item5 = types.KeyboardButton("Возмещение ущерба")
+        item6 = types.KeyboardButton("Обретение, сохранение имущества без достаточного правового основания")
+        
+        markup.add(item1,item2,item3,item4,item5,item6)
+        bot.send_message(message.chat.id, "Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Наследственное право":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Общие положения о наследовании")
+        item2 = types.KeyboardButton("Наследование по завещанию")
+        item3 = types.KeyboardButton("Наследование по закону")
+        item4 = types.KeyboardButton("Осуществление права на наследование")
+        item5 = types.KeyboardButton("Выполнение завещания")
+        item6 = types.KeyboardButton("Оформление права на наследство")
+        item7 = types.KeyboardButton("Наследственный договор")
+        
+        markup.add(item1,item2,item3,item4,item5,item6,item7)
+        bot.send_message(message.chat.id, "Какая глава интересна?", reply_markup=markup)
+
+    #ГПК(Гражданский процессуальный кодекс)
     elif message.text == "Гражданский процессуальный кодекс":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
         item1 = types.KeyboardButton("Общие положения")
