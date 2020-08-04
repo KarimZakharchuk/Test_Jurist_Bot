@@ -1,6 +1,9 @@
 import telebot
 from telebot import types
 
+from Jurist import *
+#from stat import GKU_g_1
+
 TOKEN = '1331485304:AAEZ4Ufg58rwOxov0MuyxlUF_JAoufyBT-Y'
 
 bot = telebot.TeleBot(TOKEN)
@@ -62,6 +65,27 @@ def userText(message):
         markup.add(item1,item2,item3)
         bot.send_message(message.chat.id, "Раздел 1 - Основные положения. Какая глава интересна?", reply_markup=markup)
 
+    if message.text == "Гражданское законодательство Украины":
+        if len(GKU_g_1) > 4096:
+            for x in range(0, len(GKU_g_1), 4096):
+                bot.send_message(message.chat.id, GKU_g_1[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, GKU_g_1)
+
+    if message.text == "Основания возникновения гражданских прав и обязанностей. Осуществление гражданских прав и выполнение обязанностей":
+        if len(GKU_g_2) > 4096:
+            for x in range(0, len(GKU_g_2), 4096):
+                bot.send_message(message.chat.id, GKU_g_2[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, GKU_g_2)
+
+    if message.text == "Защита гражданских прав и интересов":
+        if len(GKU_g_3) > 4096:
+            for x in range(0, len(GKU_g_3), 4096):
+                bot.send_message(message.chat.id, GKU_g_3[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, GKU_g_3)
+    
     if message.text == "Лица":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
         item1 = types.KeyboardButton("Физическое лицо")
@@ -78,12 +102,47 @@ def userText(message):
         markup.add(item1,item2,item3)
         bot.send_message(message.chat.id, "Подраздел 1 - Физическое лицо. Какая глава интересна?", reply_markup=markup)
 
+    if message.text == "Общие положения о физическом лице":
+        if len(GKU_g_4) > 4096:
+            for x in range(0, len(GKU_g_4), 4096):
+                bot.send_message(message.chat.id, GKU_g_4[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, GKU_g_4)
+
+    if message.text == "Физическое лицо - предприниматель":
+        if len(GKU_g_5) > 4096:
+            for x in range(0, len(GKU_g_5), 4096):
+                bot.send_message(message.chat.id, GKU_g_5[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, GKU_g_5)
+
+    if message.text == "Опека и попечительство":
+        if len(GKU_g_6) > 4096:
+            for x in range(0, len(GKU_g_6), 4096):
+                bot.send_message(message.chat.id, GKU_g_6[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, GKU_g_6)
+
     if message.text == "Юридическое лицо":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
         item1 = types.KeyboardButton("Общие положения о юридическом лице")
         item2 = types.KeyboardButton("Предпринимательские общества")
         markup.add(item1,item2)
         bot.send_message(message.chat.id, "Подраздел 2 - Юридическое лицо. Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Общие положения о юридическом лице":
+        if len(GKU_g_7) > 4096:
+            for x in range(0, len(GKU_g_7), 4096):
+                bot.send_message(message.chat.id, GKU_g_7[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, GKU_g_7)
+
+    if message.text == "Предпринимательские общества":
+        if len(GKU_g_8) > 4096:
+            for x in range(0, len(GKU_g_8), 4096):
+                bot.send_message(message.chat.id, GKU_g_8[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, GKU_g_8)
 
     if message.text == "Участие государства, АР Крым, территориальных общин в гражданских отношениях":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
@@ -92,6 +151,27 @@ def userText(message):
         item3 = types.KeyboardButton("Ответственность по обязательствам государства, АР Крым, территориальных общин")
         markup.add(item1,item2,item3)
         bot.send_message(message.chat.id, "Подраздел 3 - Участие государства, АР Крым, территориальных общин в гражданских отношениях. Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Правовые формы Участия государства, АР Крым, территориальных общин в гражданских отношениях":
+        if len(GKU_g_9) > 4096:
+            for x in range(0, len(GKU_g_9), 4096):
+                bot.send_message(message.chat.id, GKU_g_9[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, GKU_g_9)
+
+    if message.text == "Органы и представители, через которые действуют государство, АР Крым, территориальные общины в гражданских отношениях":
+        if len(GKU_g_10) > 4096:
+            for x in range(0, len(GKU_g_10), 4096):
+                bot.send_message(message.chat.id, GKU_g_10[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, GKU_g_10)
+
+    if message.text == "Ответственность по обязательствам государства, АР Крым, территориальных общин":
+        if len(GKU_g_11) > 4096:
+            for x in range(0, len(GKU_g_11), 4096):
+                bot.send_message(message.chat.id, GKU_g_11[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, GKU_g_11)
 
     if message.text == "Объекты гражданских прав":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
@@ -282,9 +362,23 @@ def userText(message):
         item11 = types.KeyboardButton("Производство по делам при участии иностранных лиц")
         item12 = types.KeyboardButton("Заключительные и переходные положения")
 
-
         markup.add(item1,item2,item3,item4,item5,item6,item7,item8,item9,item10,item11,item12)
         bot.send_message(message.chat.id, "Выберете категорию", reply_markup=markup)
+
+    if message.text == "Общие положения":
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
+        item1 = types.KeyboardButton("Основные положения")
+        item2 = types.KeyboardButton("Гражданская юрисдикция")
+        item3 = types.KeyboardButton("Состав суда – отводы")
+        item4 = types.KeyboardButton("Участники гражданского процесса")
+        item5 = types.KeyboardButton("Доказательства")
+        item6 = types.KeyboardButton("Процессуальные сроки")
+        item7 = types.KeyboardButton("Судебные вызовы и уведомления")
+        item8 = types.KeyboardButton("Судебные затраты")
+        item9 = types.KeyboardButton("Средства процессуального принуждения")
+        
+        markup.add(item1,item2,item3,item4,item5,item6,item7,item8,item9)
+        bot.send_message(message.chat.id, "Какой раздел интересен?", reply_markup=markup)
 
     elif message.text == "Жилищный кодекс Украины":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
@@ -411,7 +505,7 @@ def userText(message):
         markup.add(item1,item2,item3,item4,item5,item6)
         bot.send_message(message.chat.id, "Выберете категорию", reply_markup=markup)
 
-    else:
-        bot.send_message(message.chat.id, "Сделайте свой выбор!")
+    #else:
+    #    bot.send_message(message.chat.id, "Сделайте свой выбор!")
 
 bot.polling()
