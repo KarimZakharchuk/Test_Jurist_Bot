@@ -66,25 +66,28 @@ def userText(message):
         bot.send_message(message.chat.id, "Раздел 1 - Основные положения. Какая глава интересна?", reply_markup=markup)
 
     if message.text == "Гражданское законодательство Украины":
-        if len(GKU_g_1) > 4096:
-            for x in range(0, len(GKU_g_1), 4096):
-                bot.send_message(message.chat.id, GKU_g_1[x:x + 4096])
+        onlyOption = GKU_g_1
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
         else:
-            bot.send_message(message.chat.id, GKU_g_1)
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Основания возникновения гражданских прав и обязанностей. Осуществление гражданских прав и выполнение обязанностей":
-        if len(GKU_g_2) > 4096:
-            for x in range(0, len(GKU_g_2), 4096):
-                bot.send_message(message.chat.id, GKU_g_2[x:x + 4096])
+        onlyOption = GKU_g_2
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
         else:
-            bot.send_message(message.chat.id, GKU_g_2)
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Защита гражданских прав и интересов":
-        if len(GKU_g_3) > 4096:
-            for x in range(0, len(GKU_g_3), 4096):
-                bot.send_message(message.chat.id, GKU_g_3[x:x + 4096])
+        onlyOption = GKU_g_3
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
         else:
-            bot.send_message(message.chat.id, GKU_g_3)
+            bot.send_message(message.chat.id, onlyOption)
     
     if message.text == "Лица":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
@@ -103,25 +106,28 @@ def userText(message):
         bot.send_message(message.chat.id, "Подраздел 1 - Физическое лицо. Какая глава интересна?", reply_markup=markup)
 
     if message.text == "Общие положения о физическом лице":
-        if len(GKU_g_4) > 4096:
-            for x in range(0, len(GKU_g_4), 4096):
-                bot.send_message(message.chat.id, GKU_g_4[x:x + 4096])
+        onlyOption = GKU_g_4
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
         else:
-            bot.send_message(message.chat.id, GKU_g_4)
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Физическое лицо - предприниматель":
-        if len(GKU_g_5) > 4096:
-            for x in range(0, len(GKU_g_5), 4096):
-                bot.send_message(message.chat.id, GKU_g_5[x:x + 4096])
+        onlyOption = GKU_g_5
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
         else:
-            bot.send_message(message.chat.id, GKU_g_5)
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Опека и попечительство":
-        if len(GKU_g_6) > 4096:
-            for x in range(0, len(GKU_g_6), 4096):
-                bot.send_message(message.chat.id, GKU_g_6[x:x + 4096])
+        onlyOption = GKU_g_6
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
         else:
-            bot.send_message(message.chat.id, GKU_g_6)
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Юридическое лицо":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
@@ -131,18 +137,20 @@ def userText(message):
         bot.send_message(message.chat.id, "Подраздел 2 - Юридическое лицо. Какая глава интересна?", reply_markup=markup)
 
     if message.text == "Общие положения о юридическом лице":
-        if len(GKU_g_7) > 4096:
-            for x in range(0, len(GKU_g_7), 4096):
-                bot.send_message(message.chat.id, GKU_g_7[x:x + 4096])
+        onlyOption = GKU_g_7
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
         else:
-            bot.send_message(message.chat.id, GKU_g_7)
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Предпринимательские общества":
-        if len(GKU_g_8) > 4096:
-            for x in range(0, len(GKU_g_8), 4096):
-                bot.send_message(message.chat.id, GKU_g_8[x:x + 4096])
+        onlyOption = GKU_g_8
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
         else:
-            bot.send_message(message.chat.id, GKU_g_8)
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Участие государства, АР Крым, территориальных общин в гражданских отношениях":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
@@ -153,25 +161,28 @@ def userText(message):
         bot.send_message(message.chat.id, "Подраздел 3 - Участие государства, АР Крым, территориальных общин в гражданских отношениях. Какая глава интересна?", reply_markup=markup)
 
     if message.text == "Правовые формы Участия государства, АР Крым, территориальных общин в гражданских отношениях":
-        if len(GKU_g_9) > 4096:
-            for x in range(0, len(GKU_g_9), 4096):
-                bot.send_message(message.chat.id, GKU_g_9[x:x + 4096])
+        onlyOption = GKU_g_9
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
         else:
-            bot.send_message(message.chat.id, GKU_g_9)
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Органы и представители, через которые действуют государство, АР Крым, территориальные общины в гражданских отношениях":
-        if len(GKU_g_10) > 4096:
-            for x in range(0, len(GKU_g_10), 4096):
-                bot.send_message(message.chat.id, GKU_g_10[x:x + 4096])
+        onlyOption = GKU_g_10
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
         else:
-            bot.send_message(message.chat.id, GKU_g_10)
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Ответственность по обязательствам государства, АР Крым, территориальных общин":
-        if len(GKU_g_11) > 4096:
-            for x in range(0, len(GKU_g_11), 4096):
-                bot.send_message(message.chat.id, GKU_g_11[x:x + 4096])
+        onlyOption = GKU_g_11
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
         else:
-            bot.send_message(message.chat.id, GKU_g_11)
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Объекты гражданских прав":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
@@ -182,6 +193,38 @@ def userText(message):
         markup.add(item1,item2,item3,item4)
         bot.send_message(message.chat.id, "Раздел 3 - Объекты гражданских прав. Какая глава интересна?", reply_markup=markup)
 
+    if message.text == "Общие положения об объектах гражданских прав":
+        onlyOption = GKU_g_12
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Вещи. Имущество":
+        onlyOption = GKU_g_13
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Ценные бумаги":
+        onlyOption = GKU_g_14
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Нематериальные блага":
+        onlyOption = GKU_g_15
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
     if message.text == "Сделки. Представительство":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
         item1 = types.KeyboardButton("Сделки")
@@ -189,12 +232,44 @@ def userText(message):
         markup.add(item1,item2)
         bot.send_message(message.chat.id, "Раздел 4 - Сделки. Представительство. Какая глава интересна?", reply_markup=markup)
 
+    if message.text == "Сделки":
+        onlyOption = GKU_g_16
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Представительство":
+        onlyOption = GKU_g_17
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
     if message.text == "Сроки. Исковая давность":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
         item1 = types.KeyboardButton("Определение и вычисление сроков")
         item2 = types.KeyboardButton("Исковая давность") 
         markup.add(item1,item2)
         bot.send_message(message.chat.id, "Раздел 5 - Сроки. Исковая давность. Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Определение и вычисление сроков":
+        onlyOption = GKU_g_18
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Исковая давность":
+        onlyOption = GKU_g_19
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Личные неимущественные права физического лица":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
@@ -204,6 +279,30 @@ def userText(message):
         
         markup.add(item1,item2,item3)
         bot.send_message(message.chat.id, "Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Общие положения про личные неимущественные права физического лица":
+        onlyOption = GKU_g_20
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Личные неимущественные права, которые обеспечивают естественное существование физического лица":
+        onlyOption = GKU_g_21
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Личные неимущественные права, которые обеспечивают социальное бытие физического лица":
+        onlyOption = GKU_g_22
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Право собственности и прочие вещные права":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
@@ -226,6 +325,62 @@ def userText(message):
         markup.add(item1,item2,item3,item4,item5,item6,item7)
         bot.send_message(message.chat.id, "Какая глава интересна?", reply_markup=markup)
 
+    if message.text == "Общие положения о праве собственности":
+        onlyOption = GKU_g_23
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Возникновение права собственности":
+        onlyOption = GKU_g_24
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Прекращение права собственности":
+        onlyOption = GKU_g_25
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Право общей собственности":
+        onlyOption = GKU_g_26
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Право собственности на землю (земельный участок)":
+        onlyOption = GKU_g_27
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Право собственности на жилье":
+        onlyOption = GKU_g_28
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Защита права собственности":
+        onlyOption = GKU_g_29
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
     if message.text == "Вещное право на чужое имущество":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
         item1 = types.KeyboardButton("Общие положения о вещевых права на чужое имущество")
@@ -236,6 +391,46 @@ def userText(message):
         
         markup.add(item1,item2,item3,item4,item5)
         bot.send_message(message.chat.id, "Какая глава интересна?", reply_markup=markup)
+
+    if message.text == "Общие положения о вещевых права на чужое имущество":
+        onlyOption = GKU_g_30
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Право владения чужим имуществом":
+        onlyOption = GKU_g_31
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Право пользования чужим имуществом":
+        onlyOption = GKU_g_32
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Право пользования чужим земельным участком для с/х потребностей":
+        onlyOption = GKU_g_33
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
+
+    if message.text == "Право пользования чужим земельным участком для застройки":
+        onlyOption = GKU_g_34
+        if len(onlyOption) > 4096:
+            for x in range(0, len(onlyOption), 4096):
+                bot.send_message(message.chat.id, onlyOption[x:x + 4096])
+        else:
+            bot.send_message(message.chat.id, onlyOption)
 
     if message.text == "Право интеллектуальной собственности":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
